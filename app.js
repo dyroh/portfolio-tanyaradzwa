@@ -49,8 +49,8 @@ app.post("/contact", (req, res) => {
 
         console.log("Inserted ID:", result.insertId);
         const mailOptions = {
-    from: "your-email@gmail.com",
-    to: "your-email@gmail.com",
+    from: process.env.EMAIL_USER,
+    to: process.env.EMAIL_USER,
     subject: "New Portfolio Message",
     text: `
 New message received:
