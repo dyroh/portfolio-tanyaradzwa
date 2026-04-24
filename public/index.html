@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanyaradzwa Muchabaiwa | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+<!-- ===================== NAVIGATION ===================== -->
+<header class="navbar">
+    <h1 class="logo">Tanya M.</h1>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ===================== HOME SECTION ===================== -->
+<section id="home" class="section home-section">
+    <div class="home-content">
+        <h2 class="name">TANYARADZWA MUCHABAIWA</h2>
+        <p class="tagline">
+            <span id="typing-text"></span>
+    </p>
+
+        <a href="#about" class="btn">Learn More</a>
+    </div>
+
+    <div class="home-image">
+        <img src="https://drive.google.com/thumbnail?id=1T9uAj4I8hIDB2kaDP0_M7q59yLWh1oPE&sz=w1000" alt="Tanyaradzwa">
+    </div>
+</section>
+
+<!-- ===================== ABOUT SECTION ===================== -->
+<section id="about" class="section">
+    
+    <h2 class="section-title reveal">About Me</h2>
+
+    <div class="about-container reveal">
+
+        <!-- LEFT CARD -->
+        <div class="glass about-card">
+            <h3>About Me</h3>
+
+            <p>
+                Hi, I’m Tanya, a freshman at Lewis & Clark College studying Computer Science and Mathematics. I’ve always been drawn to the intersection of logic and creativity, and I enjoy working on projects that challenge me to think deeply while building something meaningful.
+
+                I’m especially interested in how technology can be used to solve real-world problems in thoughtful and impactful ways. Whether it’s designing a website, working with data, or exploring new technical ideas, I enjoy the process of learning, experimenting, and gradually improving my skills. I’m still growing as a developer, but I value building things that are both functional and intentional.
+
+                A big part of my academic journey has been developing strong analytical thinking through math, coding, and problem-solving. At the same time, I like balancing that with creativity—thinking about how design, user experience, and storytelling all play a role in the way people interact with technology.
+
+                Outside of academics, I’m someone who really values community, creativity, and expression. I enjoy sports, music, and art, and I’ve been involved in leadership roles and group activities that have shaped how I communicate and collaborate with others. These experiences influence how I approach my work—I try to stay open-minded, reflective, and grounded in what I’m creating.
+
+                Right now, I’m focused on continuing to learn, build, and explore different areas within tech. I’m especially curious about where data, systems, and real-world impact meet, and I’m excited to keep growing in that direction.
+            </p>
+
+            <p>
+                Outside school, I enjoy sports, music, art, and exploring ideas that merge 
+                innovation with culture.
+            </p>
+
+            <h4>My Interests</h4>
+            <p>Below are a a few of my interest feel free to some photos I took on my travels and studies.</p>
+            <ul>
+                <li>Basketball</li>
+                <li>TV & Movies</li>
+                <li>Music</li>
+                <li>Dancing</li>
+                <li>Video Games</li>
+                <li>Art</li>
+            </ul>
+
+            <!-- CAROUSEL -->
+            <div id="carousel"></div>
+        </div>
+
+        <!-- RIGHT CARD -->
+        <div class="glass about-card">
+            <div class="glass about-card">
+                <h3>Skills</h3>
+                <p class="skills-subtitle">Proficiency</p>
+
+                <!-- Skills will load here dynamically -->
+                <div id="skills-container"></div>
+            </div>
+        </div>
+
+    </div>
+    
+</section>
+
+<!-- ===================== PROJECTS SECTION ===================== -->
+<section id="projects" class="section">
+    <div class="glass">
+        <h2 class="section-title">Projects</h2>
+        <div class="filter-buttons">
+            <button data-filter="all">All</button>
+            <button data-filter="java">Java</button>
+            <button data-filter="video">Video</button>
+            <button data-filter="campaign">Campaign</button>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+            <!-- Projects will load here dynamically -->
+        </div>
+    </div>
+</section>
+
+<!-- ===================== CONTACT SECTION ===================== -->
+<section id="contact" class="section">
+    <div class="glass">
+        <h2 class="section-title reveal">Contact</h2>
+
+        <p class="center reveal">I’d love to connect!</p>
+        <div class="contact-links reveal">
+            <a href="mailto:muchabaiwatanyaradzwa034@gmail.com" target="_blank">📧 Email</a>
+
+            <a href="https://github.com/dyroh" target="_blank">💻 GitHub</a>
+
+            <a href="https://www.linkedin.com/in/tanyaradzwa-muchabaiwa-755b77309" target="_blank">
+                🔗 LinkedIn
+            </a>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Write your message here..." rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p id="form-status"></p>
+    </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+    <small>&copy; <span id="year"></span> Tanyaradzwa Muchabaiwa</small>
+
+    <a href="/messages?key=admin123" class="admin-link">Admin</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Poultry Plus",
+    "description": "A Java program that helps small-scale farmers manage inventory and keep records.",
+    "link": "https://github.com/dyroh/Poultry-Plus",
+    "category": "java"
+  },
+  {
+    "title": "Ubuntu Video Project",
+    "description": "A visual storytelling project exploring the meaning of Ubuntu: \"I am because we are.\" In 2025 my friend and I made a video projects about Ubuntu. \"Ubuntu\" is a Nguni Bantu term from southern Africa and often translated as \"I am because we are\" or \"humanity towards others.\"  At its core, Ubuntu speaks of our shared humanity, our interconnectedness, and the collective responsibility we hold for one another. This mural was created in a hope that we can connect as a community to create positive change for humanity.",
+    "link": "https://drive.google.com/file/d/1sXrjlw8AGmc_EJ2Hrv73QcjYaYPmOhm3/view",
+    "category": "video"
+  },
+  {
+    "title": "Fund a Flight Campaign",
+    "description": "A fundraising campaign supporting UWCSEA scholars by covering flight costs for their families.",
+    "link": "https://www.youtube.com/watch?v=XHKmAKJVjmc",
+    "category": "campaign"
+  }
+]
