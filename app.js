@@ -8,7 +8,7 @@ const nodemailer = require("nodemailer");
 const app = express();
 const PORT = 3000;
 
-/* ===== MIDDLEWARE ===== */
+/* ============================================= MIDDLEWARE ============================================= */
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-/* ===== DATABASE CONNECTION ===== */
+/* ============================================ DATABASE CONNECTION =================================== */
 const db = mysql.createConnection({
     host: "localhost",
     user: "root",
@@ -33,7 +33,7 @@ db.connect(err => {
     }
 });
 
-/* ===== CONTACT ROUTE ===== */
+/* ========================================== CONTACT ROUTE ===================================== */
 app.post("/contact", (req, res) => {
     const { name, email, message } = req.body;
 
@@ -73,7 +73,7 @@ Message: ${message}
     });
 });
 
-/* ===== IMAGE ROUTE (AUTO LOAD CAROUSEL) ===== */
+/* ============================================= IMAGE ROUTE (AUTO LOAD CAROUSEL) ========================= */
 app.get("/api/activity-images", (req, res) => {
     const dirPath = path.join(__dirname, "public", "images", "activities");
 
@@ -93,12 +93,12 @@ app.get("/api/activity-images", (req, res) => {
     });
 });
 
-/* ===== START SERVER ===== */
+/* ============================================= START SERVER =================================== */
 app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server running at http://127.0.0.1:${PORT}`);
 });
 
-/*=====ADMIN ROUTE========== */
+/*======================================= ADMIN ROUTE======================================== */
 app.get("/messages", (req, res) => {
 
     if (req.query.key !== "admin123") {
