@@ -421,6 +421,19 @@ html {
 .admin-link:hover {
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+
+    .about-container {
+        grid-template-columns: 1fr; /* stack vertically */
+        gap: 20px;
+    }
+
+    .about-card {
+        width: 100%;
+    }
+
+}
 /* ===== DEBUG MODE ===== 
 * {
     outline: 1px solid red;
