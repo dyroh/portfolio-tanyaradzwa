@@ -441,6 +441,12 @@ html {
 
     .name {
         font-size: 32px;
+    
+    }
+     #home {
+
+        padding-top: 140px; /* push content below navbar */
+
     }
 
     /* ===== ABOUT ===== */
