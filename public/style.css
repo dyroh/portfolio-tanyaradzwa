@@ -443,10 +443,19 @@ html {
         font-size: 32px;
     
     }
-     #home {
+    header {
 
-        padding-top: 140px; /* push content below navbar */
+        padding: 15px 20px; /* slightly smaller navbar */
 
+    }
+
+    #home {
+
+        padding-top: 120px;
+
+    }
+    body {
+    padding-top: 80px;
     }
 
     /* ===== ABOUT ===== */
