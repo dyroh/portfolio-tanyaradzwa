@@ -6,6 +6,21 @@
     --text-muted: #b5b9ff;
     --card-bg: rgba(255, 255, 255, 0.05);
 }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* ------------------------------ */
 body {
@@ -69,6 +84,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+    width: 100%;
 }
 
 .home-content {
@@ -421,14 +437,27 @@ html {
 .admin-link:hover {
     opacity: 1;
 }
-
+/*=========MOBILE INTERFACE ===========*/
 @media (max-width: 768px) {
 
     /* ===== GENERAL ===== */
     .section {
         padding: 100px 20px 60px;
     }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
 
+    }
+    .nav-links a {
+         font-size: 14px;
+    }
     /* ===== HOME ===== */
     .home-section {
         flex-direction: column;
@@ -498,6 +527,7 @@ html {
         width: 100%;
         max-width: 100%;
     }
+    
 
 }
 /* ===== DEBUG MODE ===== 
