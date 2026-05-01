@@ -425,12 +425,15 @@ html {
 @media (max-width: 768px) {
 
     .about-container {
-        grid-template-columns: 1fr; /* stack vertically */
+        grid-template-columns: 1fr;
         gap: 20px;
+        max-width: 500px;   /* limits width */
+        margin: 0 auto;     /* centers it */
+        padding: 0 10px;
     }
 
-    .about-card {
-        width: 100%;
+    .about-container .glass {
+        padding: 25px;
     }
 
 }
